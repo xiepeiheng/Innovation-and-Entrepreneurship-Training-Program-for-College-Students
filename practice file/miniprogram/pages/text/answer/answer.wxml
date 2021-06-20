@@ -1,0 +1,28 @@
+<!--pages/text/answer/answer.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">正确答案</view>
+      <view class="weui-article__section">
+        <view class="weui-article__section">
+          <view class="weui-article__h3">第一部分</view>
+          <view class="weui-article__p">
+            A D D A D A A C C
+          </view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">第二部分</view>
+          <view class="weui-article__p">
+            全选
+          </view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__h3">第三部分</view>
+          <view class="weui-article__p">
+            C B A B B
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

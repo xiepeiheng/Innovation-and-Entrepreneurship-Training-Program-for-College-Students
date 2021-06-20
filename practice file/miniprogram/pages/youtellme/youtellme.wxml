@@ -1,0 +1,38 @@
+<!--pages/youtellme/youtellme.wxml-->
+<view class="page__bd">
+    <view class="weui-article">
+        <view class="weui-article__h1">请你告诉我</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">
+            请写下想告诉我的话吧，无论是指出我的错误还是推荐一些书籍或者影视作品或者交个朋友都可以吖。
+            </view>
+            <view class="weui-article__p" style="color:grey">
+            如果方便的话请留下你的姓名或昵称或任何我可以得知是你的文字或符号。
+            </view>
+        </view>
+    </view>
+</view>
+
+<form bindsubmit="onSubmit">
+
+<view class="type1">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="你是……（十个字以内）" name="title1" value="{{content1}}"  maxlength="10"/>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" maxlength="{{noteMaxLen}}" bindinput="bindTextAreaChange" adjust-position="true" placeholder="请你告诉我" style="height: 3.3em" name="title2" auto-height="true" value="{{content2}}"/>
+      <view class="weui-textarea-counter">{{noteNowLen}}/{{noteMaxLen}}</view>
+    </view>
+  </view>
+</view>
+<button form-type="submit" class="weui-btn_default type1">提交</button>
+</form>

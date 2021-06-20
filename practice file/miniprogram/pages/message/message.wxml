@@ -1,0 +1,45 @@
+<view class="page__bd">
+<view class="weui-article">
+<view class="weui-article__h1">相关信息</view>
+<view class="weui-article__section">
+<view class="weui-article__h2">没有解决的问题</view>
+<view class="weui-article__section">
+<view class="weui-article__h3">第一页</view>
+<view class="weui-article__p">
+实现对应留言的方法是匹配微信昵称，所以如果新建了昵称或者头像的话是无法得到留言的。因为不想获取敏感的数据（实现起来有些麻烦）。所以每当一个人使用它的时候其实所有人的留言都被加载到逻辑层里，匹配微信昵称来显示。这是非常危险的一种行为如果运用在网页上。
+</view>
+</view>
+<view class="weui-article__section">
+<view class="weui-article__h3">第二页</view>
+<view class="weui-article__p">
+本来希望可以实现上传图像或其他文件，但是时间紧迫就放弃了。。。。
+</view>
+</view>
+<view class="weui-article__section">
+<view class="weui-article__h3">第三页</view>
+<view class="weui-article__p">
+当你做完第一页前往第二页时第一页的作答会被保存，但是当你返回第一页后再前往第二页时会发现第二页的作答丢失。
+</view>
+</view>
+<view class="weui-article__section">
+<view class="weui-article__h3">第四页</view>
+<view class="weui-article__p">
+本来希望可以实现带动态图像，比如点击一个方块就会从起来，但是时间紧迫就放弃了。。。。
+</view>
+</view>
+<view class="weui-article__h2">附言</view>
+<view class="weui-article__section">
+<view class="weui-article__h3">初衷</view>
+<view class="weui-article__p">
+制作这个东西的原因是因为大创需要制作一个可以发货和承担发货任务的接收平台。因此在复习了一段时间后通过这个来练习和使用各种组件之类的。以便正式上交的时候搬运这里面的组件即可。但是只是为工作而工作实在是太无聊了，那就借此机会做一个有意思的东西吧
+</view>
+</view>
+<view class="weui-article__section">
+<view class="weui-article__h3">致谢</view>
+<view class="weui-article__p">
+感谢柴梦妍，张樊昊，何心悦，景石宽，齐鹏，王宏月。如果没有你们这将是不可能完成的任务。
+</view>
+</view>
+</view>
+</view>
+</view>

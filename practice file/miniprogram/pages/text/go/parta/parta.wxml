@@ -1,0 +1,169 @@
+<!--pages/text/go/parta/parta.wxml-->
+<view class="page__bd">
+<view class="weui-article">
+<view class="weui-article__h1">第一部分</view>
+</view></view>
+
+
+
+<view class="type1">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="你是……（十个字以内）" name="title1" value="{{content1}}"  maxlength="10" bindinput="bindKeyInput"/>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+<view class="weui-cell"></view>
+<view class='container'>
+<text>----------密-----封-----线----------</text>
+</view>
+<view class="weui-cell"></view>
+<!--第一题""-->
+<view class="weui-cell type1" hover-class="none">我最厌恶什么食品</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange1">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems1}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第二题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">我喜欢的颜色</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange2">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems2}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第三题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">我几乎没有在什么爱好上花过钱</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange3">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems3}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第四题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">我最头疼的科目</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange4">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems4}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第五题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">我没有沉迷过哪个软件</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange5">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems5}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第六题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">我曾经后悔没学什么乐器</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange6">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems6}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第七题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">我想养什么宠物</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange7">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems7}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第八题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">曾经有半个学期我没有去学校的原因是</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange8">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems8}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第九题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">卷面分，选择C项即可得分</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange9">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems9}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--下一页按钮 -->
+<navigator url="/pages/text/go/partb/partb" open-type="navigateTo" class=" type2">
+  <button class="weui-btn" type="primary">下一页</button>
+</navigator>
+
+
+
+        

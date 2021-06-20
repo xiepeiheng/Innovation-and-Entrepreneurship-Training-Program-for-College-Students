@@ -1,0 +1,82 @@
+<!--pages/text/go/partc/partc.wxml-->
+<view class="page__bd">
+<view class="weui-article">
+<view class="weui-article__h1">第三部分</view>
+</view></view>
+<!--第一题""-->
+<view class="weui-cell type1" hover-class="none">假名かんそく的汉字是</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange1">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems1}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第二题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">数据结合中队列的特点</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange2">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems2}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第三题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">小程序封面的猫叫什么</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange3">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems3}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第四题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">大学期间我没有到过的目的地</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange4">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems4}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--第五题-->
+<view class="weui-cell"></view>
+<view class="weui-cell type1" hover-class="none">家里养过的仓鼠的名字</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+  <radio-group bindchange="radioChange5">
+    <label class="weui-cell weui-check__label" wx:for="{{radioItems5}}" wx:key="value">
+      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+          <icon class="weui-icon-checkbox_success" type="success" size="23"  wx:if="{{item.checked}}"></icon>
+        </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>
+<!--下一页按钮 -->
+
+  <button class="weui-btn type2" type="primary" bindtap="onSubmit">下一页</button>

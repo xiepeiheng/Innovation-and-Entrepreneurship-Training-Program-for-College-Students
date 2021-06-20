@@ -1,0 +1,4 @@
+/* pages/text/grade/grade.wxss */
+.type1{
+  margin-bottom: 40rpx;
+}

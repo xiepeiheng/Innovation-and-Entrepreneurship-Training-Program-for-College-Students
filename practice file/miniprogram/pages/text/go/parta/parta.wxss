@@ -1,0 +1,9 @@
+/* pages/text/go/parta/parta.wxss */
+.type1{
+  color: black;
+  background-color: white;
+}
+.container{  border: 2rpx black solid;  display: flex;  flex-direction: column;  justify-content: center;  align-items: center;}
+.type2{
+  margin: 80rpx 120rpx;
+}

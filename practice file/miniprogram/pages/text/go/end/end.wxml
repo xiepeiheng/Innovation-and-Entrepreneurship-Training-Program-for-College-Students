@@ -1,0 +1,24 @@
+<!--pages/text/go/end/end.wxml-->
+<view class="page__bd">
+<view class="weui-article">
+<view class="weui-article__h1">分数详情</view>
+</view></view>
+
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">{{x1}}分</view>
+    <view class="weui-cell__ft">总分</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd">{{x2}}分</view>
+    <view class="weui-cell__ft">第一部分</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd">{{x3}}分</view>
+    <view class="weui-cell__ft">第二部分</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd">{{x4}}分</view>
+    <view class="weui-cell__ft">第三部分</view>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+<!--pages/text/grade/grade.wxml-->
+<form bindsubmit="onSubmit">
+<view class="type1">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入答题页面上的填写的名字" name="index" maxlength="10"/>
+      </view>
+    </view>
+  </view>
+</view>
+<button form-type="submit" class="weui-btn_default type1">查询</button>
+</form>
+
+<block wx:for="{{mark}}">
+  <view class="weui-cells__title"></view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">总分</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="weui-input">{{item.total}}</view>
+      </view>
+    </view>
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">第一部分</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="weui-input">{{item.apart}}</view>
+      </view>
+    </view>
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">第二部分</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="weui-input">{{item.b1}}</view>
+      </view>
+    </view>
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">第三部分</view>
+      </view>
+      <view class="weui-cell__bd">
+        <view class="weui-input">{{item.cpart}}</view>
+      </view>
+    </view>
+  </view>
+</block>

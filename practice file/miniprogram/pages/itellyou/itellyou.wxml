@@ -1,0 +1,24 @@
+<!--<open-data type="userNickName" lang="zh_CN"></open-data>-->
+
+
+<view class="weui-article">
+  <view class="weui-article__h1">我想告诉你</view>
+  <view class="weui-article__section">
+    <view class="weui-article__p type4">点击授权会出现我为你的留言。为了保证文字可以正常出现，请不要在授权时选择使用其他头像和昵称。</view>
+  </view>
+</view>
+
+
+<block wx:if="{{condition1}}">
+<view class="weui-article type2">
+<view class="type7">{{count}}</view>
+</view>
+</block>
+
+
+<block wx:if="{{condition2}}">
+  <button class="weui-btn type1" type="primary" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" wx:if="{{condition2}}">按下按钮</button>
+</block>
+
+
+

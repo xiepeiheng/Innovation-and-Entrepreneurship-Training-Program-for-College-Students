@@ -1,0 +1,45 @@
+<!--pages/text/text.wxml-->
+<view class="page__bd">
+    <view class="weui-article">
+        <view class="weui-article__h1">小测试</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">这里有一些题目，看看你对我了解多少呢？
+            </view>
+            <view class="weui-article__section">
+                <view class="weui-article__h3">题型</view>
+                <view class="weui-article__p">
+                        第一部分为单选题，每题十分
+                </view>
+                <view class="weui-article__p">
+                        第二部分为多选题，每题五分
+                </view>
+                <view class="weui-article__p">
+                        第三部分为单选题，每题一分
+                </view>
+                <view class="weui-article__p">
+                        满分100分
+                </view>
+                <view class="weui-article__h3">范围</view>
+                <view class="weui-article__p">
+                        无
+                </view>
+                <view class="weui-article__h3">注意</view>
+                <view class="weui-article__p">
+                        请在做完一遍之后再查看正确答案吧
+                </view>
+            </view>
+        </view>
+      <navigator url="/pages/text/go/parta/parta" class="type1"> 
+        <button class="weui-btn" type="primary">开始答题</button>
+      </navigator>
+      <navigator url="/pages/text/grade/grade" class="type1">
+        <button class="weui-btn" type="default">成绩查询</button>
+      </navigator>
+      <navigator url="/pages/text/answer/answer" class="type1">
+        <button class="weui-btn" type="warn">正确答案</button>
+      </navigator>
+    </view>
+</view>
+
+
+

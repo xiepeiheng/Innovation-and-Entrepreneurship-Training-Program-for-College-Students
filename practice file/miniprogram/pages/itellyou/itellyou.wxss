@@ -1,0 +1,11 @@
+.type1{
+  margin: 0 120rpx;
+}
+.type2{
+  font-size: 17px;
+  background-color: #ffffff;
+}
+.type4{
+  color: #888888;
+  font-size: 14px;
+}

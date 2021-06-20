@@ -1,0 +1,4 @@
+/* pages/youtellme/youtellme.wxss */
+.type1{
+  margin: 40rpx 0;
+}
