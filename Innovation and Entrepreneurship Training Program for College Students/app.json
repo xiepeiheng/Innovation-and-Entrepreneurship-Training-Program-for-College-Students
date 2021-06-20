@@ -1,0 +1,65 @@
+{
+  "pages": [
+    
+
+    "pages/login/login",
+
+    "pages/forward/forward",
+    "pages/forward/zengjia/zengjia",
+    "pages/forward/weijieshou/weijieshou",
+    "pages/forward/jinxing/jinxing",
+    "pages/forward/shouhuo/shouhuo",
+    "pages/forward/lishi/lishi",
+
+    
+    "pages/delivery/delivery",
+    "pages/delivery/tiaoxuan/tiaoxuan",
+    "pages/delivery/xiangqing/xiangqing",
+    "pages/delivery/queren/queren",
+    "pages/delivery/jinxing/jinxing",
+    "pages/delivery/lishi/lishi",
+    "pages/delivery/kuwasii/kuwasii",
+
+    "pages/message/message",
+
+    "pages/feedback/feedback"
+  ],
+  "window": {
+    "backgroundColor": "#EDEDED",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTitleText": "货物运送平台",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#EDEDED",
+    "list": [
+      {
+        "pagePath": "pages/forward/forward",
+        "text": "我要发货",
+        "iconPath": "images/fahuo1.png",
+        "selectedIconPath": "images/fahuo2.png"
+      },
+      {
+        "pagePath": "pages/delivery/delivery",
+        "text": "我要接货",
+        "iconPath": "images/jiehuo1.png",
+        "selectedIconPath": "images/jiehuo2.png"
+        
+      },
+      {
+        "pagePath": "pages/feedback/feedback",
+        "iconPath": "images/yijian1.png",
+        "selectedIconPath": "images/yijian2.png",
+        "text": "意见反馈"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "images/xinxi1.png",
+        "selectedIconPath": "images/xinxi2.png",
+        "text": "相关信息"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

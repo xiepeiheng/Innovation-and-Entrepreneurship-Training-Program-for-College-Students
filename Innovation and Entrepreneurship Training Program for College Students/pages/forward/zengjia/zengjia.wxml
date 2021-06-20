@@ -1,0 +1,87 @@
+<view class="weui-cells__title">请填写以下信息</view>
+<!--提交框-->
+<form bindsubmit="onSubmit">
+<!--提交框-->
+<view class="weui-cells weui-cells_after-title">
+  <!--输入姓名-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">姓名</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="十个字以内" name="cname" value="{{content}}" maxlength="10" />
+    </view>
+  </view>
+  <!--输入电话-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">电话号</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="十五个数字以内"  name="cphone" value="{{content}}" maxlength="15" type="number"/>
+    </view>
+  </view>
+  <!--输入接收地址-->
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">接收地址</view>
+    </view>
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" maxlength="100" adjust-position="true" placeholder="一百个字以内" style="height: 3.3em" name="fplace" auto-height="true" value="{{content}}"/>
+    </view>
+  </view>
+  <!--输入接收日期-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">接收日期</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{ftime}}" start="{{count1}}-{{count2}}-{{count3}}" end="2021-12-31" bindchange="bindDateChange1">
+        <view class="weui-input">{{ftime}}</view>
+      </picker>
+    </view>
+  </view>
+  <!--输入送达地址-->
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">送达地址</view>
+    </view>
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" maxlength="100" adjust-position="true" placeholder="一百个字以内" style="height: 3.3em" name="splace" auto-height="true" value="{{content}}"/>
+    </view>
+  </view>
+  <!--输入送达日期-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">送达日期</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="date" value="{{stime}}" start="{{count1}}-{{count2}}-{{count3}}" end="2021-12-01" bindchange="bindDateChange2">
+        <view class="weui-input">{{stime}}</view>
+      </picker>
+    </view>
+  </view>
+  <!--货物描述-->
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">货物描述</view>
+    </view>
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" maxlength="100" adjust-position="true" placeholder="一百个字以内" style="height: 3.3em" name="describe" auto-height="true" value="{{content}}"/>
+    </view>
+  </view>
+  <!--酬金-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">酬金</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="单位为元" name="money" value="{{content}}" maxlength="15" type="number"/>
+    </view>
+  </view>
+</view>
+<view class="weui-cells__tips">点击确认后不可更改，请谨慎填写</view>
+
+<button form-type="submit">提交</button>
+</form>
+

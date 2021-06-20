@@ -1,0 +1,6 @@
+.page__bd{
+  margin: 0 60rpx;
+}
+.type1{
+  margin: 40rpx 0;
+}

@@ -1,0 +1,38 @@
+<view class="weui-cells__title">请填写以下信息以便发货方知悉您的信息</view>
+<!--提交框-->
+<form bindsubmit="onSubmit">
+
+<view class="weui-cells weui-cells_after-title">
+  <!--输入姓名-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">姓名</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="十个字以内" name="jname" value="{{content}}" maxlength="10" />
+    </view>
+  </view>
+  <!--输入电话-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">电话号</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" placeholder="十五个数字以内"  name="jphone" value="{{content}}" maxlength="15" type="number"/>
+    </view>
+  </view>
+  <!--输入留言-->
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">留言</view>
+    </view>
+    <view class="weui-cell__bd">
+      <textarea class="weui-textarea" maxlength="100" adjust-position="true" placeholder="一百个字以内" style="height: 3.3em" name="jmessage" auto-height="true" value="{{content}}"/>
+    </view>
+  </view>
+
+</view>
+<view class="weui-cells__tips">点击提交即代表您承担此订单的运输任务</view>
+
+<button form-type="submit">提交</button>
+</form>

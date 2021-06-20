@@ -1,0 +1,108 @@
+<view class="page__bd">
+<view class="weui-article">
+<view class="weui-article__h1">详细信息</view>
+</view></view>
+<block wx:for="{{mark}}">
+<view class="weui-cells weui-cells_after-title">
+<view class="weui-cells__title"></view>
+  <!--输入姓名-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">姓名</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.cname}}</view>
+    </view>
+  </view>
+  <!--输入电话-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">电话</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.cphone}}</view>
+    </view>
+  </view>
+  <!--接收地址-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">接收地址</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.fplace}}</view>
+    </view>
+  </view>
+  <!--接收日期-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">接收日期</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.ftime}}</view>
+    </view>
+  </view>
+  <!--送达地址-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">送达地址</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.splace}}</view>
+    </view>
+  </view>
+  <!--送达日期-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">送达日期</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.stime}}</view>
+    </view>
+  </view>
+  <!--货物描述-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">货物描述</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.describe}}</view>
+    </view>
+  </view>
+  <!--酬金-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">酬金</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.money}}</view>
+    </view>
+  </view>
+  <!--接货方姓名-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">接货方姓名</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.jname}}</view>
+    </view>
+  </view>
+  <!--接货方姓名-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">接货方姓名</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.jphone}}</view>
+    </view>
+  </view>
+  <!--接货方信息-->
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">接货方信息</view>
+    </view>
+    <view class="weui-cell__hd">
+      <view>{{item.jmessage}}</view>
+    </view>
+  </view>
+</view>
+</block>

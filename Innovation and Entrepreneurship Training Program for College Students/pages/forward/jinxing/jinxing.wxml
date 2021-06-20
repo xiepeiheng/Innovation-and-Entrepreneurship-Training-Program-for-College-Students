@@ -1,0 +1,28 @@
+<block wx:for="{{mark}}">
+  <view class="weui-form-preview">
+    <view class="weui-form-preview__item"></view>
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">订单金额</view>
+        <view class="weui-form-preview__value_in-hd">¥{{item.money}}</view>
+      </view>
+    </view>
+    <view class="weui-form-preview__bd">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">送达日期</view>
+        <view class="weui-form-preview__value">{{item.stime}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">送达地点</view>
+        <view class="weui-form-preview__value">{{item.splace}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">接货人号码</view>
+        <view class="weui-form-preview__value">{{item.sphone}}</view>
+      </view>
+    </view>
+    <view class="weui-form-preview__ft">
+      <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" url="/pages/forward/shouhuo/shouhuo?title={{item._id}}">查看详情</navigator>
+    </view>
+  </view>
+</block>

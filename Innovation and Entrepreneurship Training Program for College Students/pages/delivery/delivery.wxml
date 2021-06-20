@@ -1,0 +1,17 @@
+<view class="page__bd">
+  <view class="weui-article">
+    <view class="weui-article__h1">接货页面</view>
+    <view class="weui-article__section">
+      <view class="weui-article__p">在这里选择并管理您想要接受的货物运送订单</view>
+    </view>
+    <navigator url="/pages/delivery/tiaoxuan/tiaoxuan" class="type1">
+      <button class="weui-btn" type="primary">寻找订单</button>
+    </navigator>
+    <navigator url="/pages/delivery/jinxing/jinxing" class="type1">
+      <button class="weui-btn" type="default">未完成订单</button>
+    </navigator>
+    <navigator url="/pages/delivery/lishi/lishi" class="type1">
+      <button class="weui-btn" type="default">已完成订单</button>
+    </navigator>
+  </view>
+</view>

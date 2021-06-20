@@ -1,0 +1,41 @@
+<!--pages/message/message.wxml-->
+<view class="page__bd">
+  <view class="weui-article">
+    <view class="weui-article__h1">相关信息</view>
+    <view class="weui-article__section">
+      <view class="weui-article__h2">逻辑介绍</view>
+      <view class="weui-article__section">
+        <view class="weui-article__h3">发货方</view>
+        <view class="weui-article__p">
+          在“发布信息”中发布货运需求订单，被接货方接受后显示在“正在进行”中。当我方确认货物已经收到后订单被移动到“历史订单”中。
+        </view>
+      </view>
+      <view class="weui-article__section">
+        <view class="weui-article__h3">接货方</view>
+        <view class="weui-article__p">
+          在“订单信息”中选择想要接受的订单并补充我方信息。随后该订单显示在“正在进行”中。当发货方确认收货后该订单被移动到“历史订单中”。
+        </view>
+      </view>
+      <view class="weui-article__section">
+        <view class="weui-article__h3">意见反馈</view>
+        <view class="weui-article__p">
+          在这里提交您的反馈，感谢您的反馈。
+        </view>
+      </view>
+      
+      <view class="weui-article__h2">附言</view>
+      <view class="weui-article__section">
+        <view class="weui-article__h3">存在的问题</view>
+        <view class="weui-article__p">
+          与其说问题还不如说实现了什么……对于一笔订单状态的转换使用了变量来实现，比如当其为00时意为已被创建但是未被人接受，这样就可以被希望接货的人搜索到。其他的状态也是这样。凭借这样的方法实现了非常基础的功能。借助微信小程序在开发方面提供的强大的支持还有很多事情可以做到。
+        </view>
+      </view>
+      <view class="weui-article__section">
+        <view class="weui-article__h3">致谢</view>
+        <view class="weui-article__p">
+          感谢柴梦妍，张樊昊，何心悦，景石宽，齐鹏，王宏月的大力支持。
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="page__bd">
+  <view class="weui-article">
+    <view class="weui-article__h1">发货页面</view>
+    <view class="weui-article__section">
+      <view class="weui-article__p">在这里管理您的所有发货订单</view>
+    </view>
+    <navigator url="/pages/forward/zengjia/zengjia" class="type1">
+      <button class="weui-btn" type="primary">发布订单</button>
+    </navigator>
+    <navigator url="/pages/forward/weijieshou/weijieshou" class="type1">
+      <button class="weui-btn" type="default">未接受订单</button>
+    </navigator>
+    <navigator url="/pages/forward/jinxing/jinxing" class="type1">
+      <button class="weui-btn" type="default">未完成订单</button>
+    </navigator>
+    <navigator url="/pages/forward/lishi/lishi" class="type1">
+      <button class="weui-btn" type="default">已完成订单</button>
+    </navigator>
+  </view>
+</view>

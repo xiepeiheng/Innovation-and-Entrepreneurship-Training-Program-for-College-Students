@@ -1,0 +1,28 @@
+<block wx:for="{{mark}}">
+  <view class="weui-cells__title"></view>
+  <view class="weui-form-preview">
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__label">订单金额</view>
+      <view class="weui-form-preview__value_in-hd">¥{{item.money}}</view>
+    </view>
+    <view class="weui-form-preview__bd">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">送达时间</view>
+        <view class="weui-form-preview__value">{{item.stime}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">送达地点</view>
+        <view class="weui-form-preview__value">{{item.splace}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">货物描述</view>
+        <view class="weui-form-preview__value">{{item.describe}}</view>
+      </view>
+    </view>
+    <view class="weui-form-preview__ft">
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active" url="/pages/delivery/xiangqing/xiangqing?title={{item._id}}">详细信息</navigator>
+      <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" url="/pages/delivery/queren/queren?title={{item._id}}">接受订单</navigator>
+   </view>
+  </view>
+
+</block>

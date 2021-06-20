@@ -1,0 +1,4 @@
+page,.page{height:100%;}
+.type1{
+  margin-top: 400rpx;
+}
